@@ -13,7 +13,9 @@ import { BonusLogo } from './components/BonusLogo';
 function App() {
   return (
     <div className="App">
-      <Rules/>
+      <div className='flex items-center justify-center h-screen w-screen'>
+        <Rules/>
+      </div>
     </div>
   );
 }
