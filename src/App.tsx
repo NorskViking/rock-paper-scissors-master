@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className='flex items-center justify-center h-screen w-screen'>
-        <Rules/>
+        <BonusRules/>
       </div>
     </div>
   );
