@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import { Rock } from './components/Rock';
+import { Paper } from './components/Paper';
+import { Scissor } from './components/Scissor';
+import { Rules } from './components/Rules';
+import { Spock } from './components/Spock';
+import { Lizard } from './components/Lizard';
+import { BonusRules } from './components/BonusRules';
+import { Logo } from './components/Logo';
+import { BonusLogo } from './components/BonusLogo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Rules/>
     </div>
   );
 }

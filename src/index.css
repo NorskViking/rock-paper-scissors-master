@@ -1,10 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Barlow Semi Condensed FontFamily */
+/* Barlow Semi Condensed Semi Bold */
+@font-face {
+  font-family: 'BarlowSemiCondensed';
+  src: url('../public/fonts/BarlowSemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+/* Barlow Semi Condensed Bold */
+@font-face {
+  font-family: 'BarlowSemiCondensed';
+  src: url('../public/fonts/BarlowSemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --color-scissor-from: 39deg 89% 49%;
+    --color-scissor-to: 40deg 84% 65%;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'BarlowSemiCondensed';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 
 code {
