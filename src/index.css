@@ -18,13 +18,6 @@
   font-style: normal;
 }
 
-@layer base {
-  :root {
-    --color-scissor-from: 39deg 89% 49%;
-    --color-scissor-to: 40deg 84% 65%;
-  }
-}
-
 body {
   margin: 0;
   font-family: 'BarlowSemiCondensed';

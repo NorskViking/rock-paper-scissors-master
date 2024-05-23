@@ -1,20 +1,21 @@
 import React from 'react';
 import './index.css';
-import { Rock } from './components/Rock';
-import { Paper } from './components/Paper';
-import { Scissor } from './components/Scissor';
-import { Rules } from './views/Rules';
-import { Spock } from './components/Spock';
-import { Lizard } from './components/Lizard';
-import { BonusRules } from './views/BonusRules';
-import { Logo } from './components/Logo';
-import { BonusLogo } from './components/BonusLogo';
+import RPS_GAME from './rps/RPS_GAME';
 
 function App() {
+
+  /** 
+   //Change game-mode between Rock, Paper, Scissor and Rock, Paper, Scissor, Spock, Lizard
+  const getGameMode = () => {
+
+  }
+  */
+  let score = 2;
+
   return (
     <div className="App">
       <div className='flex items-center justify-center h-screen w-screen'>
-        <Rules />
+        <RPS_GAME />
       </div>
     </div>
   );
