@@ -10,7 +10,6 @@ function App() {
 
   }
   */
-  let score = 2;
 
   return (
     <div className="App">

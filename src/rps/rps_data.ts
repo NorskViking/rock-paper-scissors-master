@@ -3,7 +3,7 @@ import paperIcon from '../assets/icon-paper.svg';
 import scissorIcon from '../assets/icon-scissors.svg';
 
 export const RPS = [
-    { name: 'ROCK', color: 'border-[#DE3353]', img: rockIcon },
+    { name: 'ROCK', color: "border-[#DE3353]", img: rockIcon },
     { name: 'PAPER', color: 'border-[#4B67F8]', img: paperIcon },
     { name: 'SCISSOR', color: 'border-[#EDA012]', img: scissorIcon },
 ];

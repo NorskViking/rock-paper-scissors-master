@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import ScoreBoard from "../components/Score";
 import Rules from "./rps_rules";
 import GameBoard from "./GameBoard";
+import ResultBoard from "../components/ResultBoard";
 import { RPS, COMPUTER_CHOICE, PLAYER_CHOICE, COMPUTER_CHOICES } from './rps_data'
 
 
@@ -55,16 +56,24 @@ export default function RPS_GAME() {
     };
 
     return (
-        <div>
-            <div className="flex justify-center">
+        <div className="flex justify-center h-screen w-screen place-content-center">
+            <div>
                 {rulesVisible && (
-                    <Rules onClose={() => setRulesVisibility(false)}>Rules</Rules>
+                    <Rules onClose={() => setRulesVisibility(false)}>RULES</Rules>
                 )}
                 <ScoreBoard score={score} />
-                <Button styles="absolute bottom-20" onClose={() => setRulesVisibility(true)}>RULES</Button>
-                <GameBoard handleClick={handleClick} />
+                <Button styles="absolute bottom-10 right-5 bg-white rounded w-[5rem] h-[2.5rem] text-2xl" onClose={() => setRulesVisibility(true)}>RULES</Button>
             </div>
-
+            {isClicked === false ? (
+                <GameBoard handleClick={handleClick} />
+            ) : (
+                <ResultBoard
+                    result={winner}
+                    restart={setIsClicked}
+                    player={PLAYER_CHOICE}
+                    computer={COMPUTER_CHOICE} 
+                />
+            )}    
         </div>
     )
 } 
