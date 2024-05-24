@@ -20,47 +20,50 @@ const ResultBoard = ({ player, computer, restart, result }: Props) => {
     }, []);
 
     return (
-        <div className="flex fixed z-0 inset-0 top-[35%] items-center justify-center w-[95vw] h-[45vh]">
-            <div>
+        <div className="flex fixed z-0 top-[25%] items-center justify-center h-full sm:top-[35%]">
+            <div className="w-full h-full">
                 {/* Player pick*/}
-                <div className="m-5 fixed inset-0 z-[-1] top-40 items-center justify-center scale-75">
-                    <div className="mb-4 text-2xl text-white">YOU PICKED</div>
+                <div className="fixed left-0 z-50 items-center justify-center scale-75 sm:scale-[150%] sm:left-[30%]">
+                    <div className="relative z-20 mb-4 text-2xl text-white text-center">YOU PICKED</div>
                     <div className="pointer-event-none">
                         {result === "YOU WIN!" && renderComponent ? (
-                            <div className="z-0 rounded-full shadow-rings">
+                            <div className="relative z-0 rounded-full shadow-rings">
                                 <SelectButton choice={player} />
                             </div>
                         ) : (
-                            <SelectButton choice={player} />
+                            <div className="relative z-40">
+                                <SelectButton choice={player} />
+                            </div>
                         )}
                     </div>
                 </div>
-
+                {/* Computer pick */}
+                <div className="fixed right-0 z-50 items-center justify-center scale-75 sm:scale-[150%] sm:right-[30%]">
+                    <div className="relative z-20 mb-4 text-2xl text-white text-center">COMPUTER PICKED</div>
+                    <div className="pointer-event-none">
+                        {result === "YOU LOOSE" && renderComponent ? (
+                            <div className="relative z-0 rounded-full shadow-rings">
+                                <SelectButton choice={computer} />
+                            </div>
+                        ) : (
+                            <div className="relative z-40">
+                                <SelectButton choice={computer} />
+                            </div>
+                        )}
+                    </div>
+                </div>
+                {/* Result text and start new game button. */}
                 {renderComponent && (
-                    <div className="fixed z-40 bottom-[15%] items-center justify-center">
-                        <div className="text-4xl font-bold text-white">{result}</div>
+                    <div className="relative z-50 mx-auto my-auto h-full top-[35%] items-center justify-center sm:top-20">
+                        <div className="text-4xl font-bold text-white text-center">{result}</div>
                         <Button
                             onClose={() => restart(false)}
-                            styles="border-headerOutline border-2 rounded-lg px-8 py-1 bg-white text-black mt-3"
+                            styles="border-headerOutline border-2 rounded-lg px-8 py-2 bg-white text-xl text-black mt-3 items-center justify-center"
                         >
                             <div className="text-darkText hover:text-red-500">PLAY AGAIN</div>
                         </Button>
                     </div>
                 )}
-
-                {/* Computer pick */}
-                <div className="m-5 fixed inset-0 bottom-40 z-[-1] items-center justify-center scale-75">
-                    <div className="mb-4 text-2xl text-white">COMPUTER PICKED</div>
-                    <div className="pointer-event-none">
-                        {result === "YOU LOOSE.." && renderComponent ? (
-                            <div className="z-0 rounded-full shadow-rings">
-                                <SelectButton choice={computer} />
-                            </div>
-                        ) : (
-                            <SelectButton choice={computer} />
-                        )}
-                    </div>
-                </div>
             </div>
         </div>
     )

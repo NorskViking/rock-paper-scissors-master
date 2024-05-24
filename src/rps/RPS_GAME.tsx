@@ -40,7 +40,7 @@ export default function RPS_GAME() {
             if (score > 0) {
                 setScore(score -1)
             }
-            return 'YOU LOOSE..';
+            return 'YOU LOOSE';
         }
     }
 
@@ -57,12 +57,12 @@ export default function RPS_GAME() {
 
     return (
         <div className="flex justify-center h-screen w-screen place-content-center">
-            <div>
+            <div className="">
                 {rulesVisible && (
                     <Rules onClose={() => setRulesVisibility(false)}>RULES</Rules>
                 )}
                 <ScoreBoard score={score} />
-                <Button styles="absolute bottom-10 right-5 bg-white rounded w-[5rem] h-[2.5rem] text-2xl" onClose={() => setRulesVisibility(true)}>RULES</Button>
+                <Button styles="absolute z-50 bottom-10 right-[5%] text-white border-2 rounded w-[5rem] h-[2.5rem] text-2xl sm:right-[35%]" onClose={() => setRulesVisibility(true)}>RULES</Button>
             </div>
             {isClicked === false ? (
                 <GameBoard handleClick={handleClick} />

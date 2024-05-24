@@ -7,12 +7,12 @@ interface Props {
     onClose: () => void;
 }
 const Rules = ({ children, onClose}: Props) => (
-    <div className='z-[10] flex fixed w-screen h-screen bg-black bg-opacity-[40%] items-center'>
-        <div className='z-[150] fixed flex left-[40%] bg-white w-96 h-96 grid grid-rows-3 gap-2 object-center place-items-center sm:max-h-96 sm:max-w-96 sm:relative sm:rounded-xl'>
+    <div className='z-[100] flex sticky w-screen h-screen bg-black bg-opacity-[40%] items-center justify-center'>
+        <div className='z-[150] fixed flex w-screen h-screen bg-white grid grid-rows-3 gap-2 place-items-center sm:h-96 sm:w-96 sm: sm:rounded-xl'>
             <div className='text-5xl text-[#606e85] text-center sm:place-self-start sm:p-4'>
                 {children}
             </div>
-            <div className='p-8 sm:absolute sm:bottom-4 sm:max-w-80 sm:max-h-80'>
+            <div className='p-8 sm:absolute sm:bottom-2 sm:w-80 sm:h-80'>
                 <img src={rules} alt="Rule set for Rock, paper, scissor. Rock beats scissor. Paper beats rock. Scissor beats paper."/>
             </div>
             <div className='sm:absolute sm:top-5 sm: right-5'>
