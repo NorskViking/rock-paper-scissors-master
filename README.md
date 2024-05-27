@@ -8,13 +8,13 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [ToDo](#todo)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -35,6 +35,14 @@ Users should be able to:
 
 - Solution URL: [Solution](https://github.com/NorskViking/rock-paper-scissors-master)
 - Live Site URL: [Try the game](https://norskviking.github.io/portfolio/RPS)
+
+### ToDo
+
+- [ ] Deploy to Github-pages via my portfolio website
+- [ ] Implement a Rock, Paper, Scissor, Spock & Lizard version
+- [ ] Implement function for changing between RPS & RPSSL
+- [ ] Add home to portfolio button
+- [ ] Optimize Components for use in the different game-modes
 
 ## My process
 
