@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css';
 import RPS_GAME from './rps/RPS_GAME';
 import Navbar from './components/Navbar';
-import { Routes, Route } from "react-router-dom";
 
 function App() {
 
