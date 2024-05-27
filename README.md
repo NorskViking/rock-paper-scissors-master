@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/NorskViking/rock-paper-scissors-master)
-- Live Site URL: [Try the game](https://norskviking.github.io/portfolio/RPS)
+- Live Site URL: [Try the game](https://norskviking.github.io/rock-paper-scissors-master/)
 
 ### ToDo
 
