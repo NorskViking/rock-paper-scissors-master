@@ -1,5 +1,4 @@
 import rps_logo from '../assets/logo.svg';
-import rpssl_logo from '../assets/logo-bonus.svg'
 
 interface Props {
     score: number;
