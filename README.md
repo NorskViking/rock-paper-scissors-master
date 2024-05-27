@@ -41,7 +41,7 @@ Users should be able to:
 - [ ] Deploy to Github-pages via my portfolio website
 - [ ] Implement a Rock, Paper, Scissor, Spock & Lizard version
 - [ ] Implement function for changing between RPS & RPSSL
-- [ ] Add home to portfolio button
+- [x] Add home to portfolio button
 - [ ] Optimize Components for use in the different game-modes
 
 ## My process
