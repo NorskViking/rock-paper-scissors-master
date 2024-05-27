@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import RPS_GAME from './rps/RPS_GAME';
 import Navbar from './components/Navbar';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
@@ -15,9 +16,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='flex items-center justify-center h-screen w-screen'>
-        <RPS_GAME />
-      </div>
+      <Routes>
+        <div className='flex items-center justify-center h-screen w-screen'>
+          <Route path="/" element={<RPS_GAME />} />
+        </div>
+      </Routes>
     </div>
   );
 }
