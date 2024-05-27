@@ -16,11 +16,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
         <div className='flex items-center justify-center h-screen w-screen'>
-          <Route path="/" element={<RPS_GAME />} />
+          <RPS_GAME />
         </div>
-      </Routes>
     </div>
   );
 }
