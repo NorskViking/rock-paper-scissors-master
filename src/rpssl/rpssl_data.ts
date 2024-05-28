@@ -5,11 +5,11 @@ import spockIcon from '../assets/icon-spock.svg';
 import lizardICon from '../assets/icon-lizard.svg';
 
 export const RPSSL = [
-    { name: 'ROCK', color: 'border-[]', img: rockIcon },
-    { name: 'PAPER', color: 'border-[]', img: paperIcon },
-    { name: 'SCISSOR', color: 'border-[]', img: scissorIcon },
-    { name: 'SPOCK', color: 'border-[]', img: spockIcon },
-    { name: 'LIZARD', color: 'border-[]', img: lizardICon },
+    { name: 'ROCK', color: "border-[#DE3353]", img: rockIcon },
+    { name: 'PAPER', color: 'border-[#4B67F8]', img: paperIcon },
+    { name: 'SCISSOR', color: 'border-[#EDA012]', img: scissorIcon },
+    { name: 'SPOCK', color: 'border-[#40B9CE]', img: spockIcon },
+    { name: 'LIZARD', color: 'border-[#834FE3]', img: lizardICon },
 ];
 
 export const PLAYER_CHOICE = {

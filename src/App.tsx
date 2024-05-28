@@ -1,7 +1,9 @@
 import React from 'react';
 import './index.css';
 import RPS_GAME from './rps/RPS_GAME';
-import Navbar from './components/Navbar';
+import RPSSL_GAME from './rpssl/RPSSL_GAME';
+import HomeButton from './components/HomeButton';
+import GameMode from './components/GameMode';
 
 function App() {
 
@@ -14,9 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <HomeButton />
+      <GameMode />
         <div className='flex items-center justify-center h-screen w-screen'>
-          <RPS_GAME />
+          <RPSSL_GAME />
         </div>
     </div>
   );

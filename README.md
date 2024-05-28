@@ -36,10 +36,16 @@ Users should be able to:
 - Solution URL: [Solution](https://github.com/NorskViking/rock-paper-scissors-master)
 - Live Site URL: [Try the game](https://norskviking.github.io/rock-paper-scissors-master/)
 
+### Known bugs
+
+- When deploying the game on gh-pages, only blank screen is displayed.
+- On computer win, shadow-rings is placed over player-choice display, even though player-choice should have z-index 70 and computer-choice z-index 0
+- In 'Rock, Paper, Scissor, Spock, Lizard' gamemode, the 'rock'-button have missing pointer area in the middle, making the player have to click the outer edges to choose 'rock', unknown why this is.
+
 ### ToDo
 
 - [ ] Deploy to Github-pages via my portfolio website
-- [ ] Implement a Rock, Paper, Scissor, Spock & Lizard version
+- [x] Implement a Rock, Paper, Scissor, Spock & Lizard version
 - [ ] Implement function for changing between RPS & RPSSL
 - [x] Add home to portfolio button
 - [ ] Optimize Components for use in the different game-modes
@@ -48,12 +54,11 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Typescript](https://www.typescriptlang.org/) - React framework
 - [TailwindCSS](https://tailwindcss.com/) - For styles
+- Github Actions - for continuos deployment
 
 ### What I learned
 

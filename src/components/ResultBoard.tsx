@@ -20,26 +20,26 @@ const ResultBoard = ({ player, computer, restart, result }: Props) => {
     }, []);
 
     return (
-        <div className="flex fixed z-0 top-[25%] items-center justify-center h-full sm:top-[35%]">
+        <div className="flex fixed top-[25%] items-center justify-center h-full sm:top-[35%]">
             <div className="w-full h-full">
                 {/* Player pick*/}
-                <div className="fixed left-0 z-50 items-center justify-center scale-75 sm:scale-[150%] sm:left-[30%]">
-                    <div className="relative z-20 mb-4 text-2xl text-white text-center">YOU PICKED</div>
+                <div className="fixed left-0  items-center justify-center scale-75 sm:scale-[150%] sm:left-[30%]">
+                    <div className="relative z-[30] mb-4 text-2xl text-white text-center">YOU PICKED</div>
                     <div className="pointer-event-none">
                         {result === "YOU WIN!" && renderComponent ? (
                             <div className="relative z-0 rounded-full shadow-rings">
                                 <SelectButton choice={player} />
                             </div>
                         ) : (
-                            <div className="relative z-40">
+                            <div className="relative z-[70]">
                                 <SelectButton choice={player} />
                             </div>
                         )}
                     </div>
                 </div>
                 {/* Computer pick */}
-                <div className="fixed right-0 z-50 items-center justify-center scale-75 sm:scale-[150%] sm:right-[30%]">
-                    <div className="relative z-20 mb-4 text-2xl text-white text-center">COMPUTER PICKED</div>
+                <div className="fixed right-0  items-center justify-center scale-75 sm:scale-[150%] sm:right-[30%]">
+                    <div className="relative z-[20] mb-4 text-2xl text-white text-center">COMPUTER PICKED</div>
                     <div className="pointer-event-none">
                         {result === "YOU LOOSE" && renderComponent ? (
                             <div className="relative z-0 rounded-full shadow-rings">
@@ -54,7 +54,7 @@ const ResultBoard = ({ player, computer, restart, result }: Props) => {
                 </div>
                 {/* Result text and start new game button. */}
                 {renderComponent && (
-                    <div className="relative z-50 mx-auto my-auto h-full top-[35%] items-center justify-center sm:top-20">
+                    <div className="relative z-[100] mx-auto my-auto h-full top-[35%] items-center justify-center sm:top-20">
                         <div className="text-4xl font-bold text-white text-center">{result}</div>
                         <Button
                             onClose={() => restart(false)}

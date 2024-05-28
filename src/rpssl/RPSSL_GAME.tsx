@@ -2,21 +2,21 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import ScoreBoard from "./Score";
-import Rules from "./rps_rules";
-import RPSGameBoard from "./RPSGameBoard";
+import BonusRules from "./rpssl_rules";
+import RPSSLGameBoard from "./RPSSLGameBoard";
 import ResultBoard from "../components/ResultBoard";
-import { RPS, COMPUTER_CHOICE, PLAYER_CHOICE, RPS_CHOICES } from './rps_data'
+import { RPSSL, COMPUTER_CHOICE, PLAYER_CHOICE, RPSSL_CHOICES } from './rpssl_data'
 
 
-export default function RPS_GAME() {
+export default function RPSSL_GAME() {
     const [rulesVisible, setRulesVisibility] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
     const [score, setScore] = useState(0);
     const [winner, setWinner] = useState('');
 
     const getComputerChoice = () => {
-        const computerChoice = Math.floor(Math.random() * RPS_CHOICES.length);
-        return RPS[computerChoice];
+        const computerChoice = Math.floor(Math.random() * RPSSL_CHOICES.length);
+        return RPSSL[computerChoice];
     };
 
     const updateChoice = (choice: any, newChoice: {name: any, color: any, img: any} ) => {
@@ -30,9 +30,11 @@ export default function RPS_GAME() {
         if (computerChoice === playerChoice) {
             return 'TIE';
         } else if (
-            (playerChoice === 'ROCK' && computerChoice === 'SCISSOR') ||
-            (playerChoice === 'PAPER' && computerChoice === 'ROCK') ||
-            (playerChoice === 'SCISSOR' && computerChoice === 'PAPER')
+            (playerChoice === 'ROCK' && computerChoice === ('SCISSOR' || 'LIZARD')) ||
+            (playerChoice === 'PAPER' && computerChoice === ('ROCK' || 'SPOCK')) ||
+            (playerChoice === 'SCISSOR' && computerChoice === ('PAPER' || 'LIZARD')) ||
+            (playerChoice === 'SPOCK' && computerChoice === ('SCISSOR' || 'ROCK')) ||
+            (playerChoice === 'LIZARD' && computerChoice === ('SPOCK' || 'PAPER'))
         ) {
             setScore(score + 1);
             return 'YOU WIN!';
@@ -59,13 +61,13 @@ export default function RPS_GAME() {
         <div className="flex justify-center h-screen w-screen place-content-center">
             <div className="">
                 {rulesVisible && (
-                    <Rules onClose={() => setRulesVisibility(false)}>RULES</Rules>
+                    <BonusRules onClose={() => setRulesVisibility(false)}>RULES</BonusRules>
                 )}
                 <ScoreBoard score={score} />
                 <Button styles="absolute z-50 bottom-10 right-[5%] text-white border-2 rounded w-[5rem] h-[2.5rem] text-2xl sm:right-[35%]" onClose={() => setRulesVisibility(true)}>RULES</Button>
             </div>
             {isClicked === false ? (
-                <RPSGameBoard handleClick={handleClick} />
+                <RPSSLGameBoard handleClick={handleClick} />
             ) : (
                 <ResultBoard
                     result={winner}

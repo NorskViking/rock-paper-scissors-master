@@ -20,4 +20,4 @@ export const COMPUTER_CHOICE = {
     img: "",
 }
 
-export const COMPUTER_CHOICES: string[] = ['ROCK', 'PAPER', 'SCISSOR'];
+export const RPS_CHOICES: string[] = ['ROCK', 'PAPER', 'SCISSOR'];

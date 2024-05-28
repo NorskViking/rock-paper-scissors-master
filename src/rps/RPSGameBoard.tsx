@@ -5,7 +5,7 @@ interface Props {
     handleClick: (arg1: any) => void;
 }
 
-const GameBoard = ( { handleClick }: Props ) => {
+const RPSGameBoard = ( { handleClick }: Props ) => {
     return (
         <>
             <div className="flex fixed items-center justify-center w-[90vw] h-[40vh] top-[35%]">
@@ -28,4 +28,4 @@ const GameBoard = ( { handleClick }: Props ) => {
     )
 }
 
-export default GameBoard;
+export default RPSGameBoard;
