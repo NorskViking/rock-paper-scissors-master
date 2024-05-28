@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import RPS_GAME from './rps/RPS_GAME';
-import RPSSL_GAME from './rpssl/RPSSL_GAME';
+//import RPSSL_GAME from './rpssl/RPSSL_GAME';
 import HomeButton from './components/HomeButton';
 import GameMode from './components/GameMode';
 
@@ -19,7 +19,7 @@ function App() {
       <HomeButton />
       <GameMode />
         <div className='flex items-center justify-center h-screen w-screen'>
-          <RPSSL_GAME />
+          <RPS_GAME />
         </div>
     </div>
   );

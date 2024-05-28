@@ -1,3 +1,5 @@
+![issues-open](https://img.shields.io/github/issues/NorskViking/rock-paper-scissors-master.svg) ![issues-closed](https://img.shields.io/github/issues-closed/NorskViking/rock-paper-scissors-master.svg) ![pull-open](https://img.shields.io/github/issues-pr/NorskViking/{repo-name}.svg) ![pull-closed](https://img.shields.io/github/issues-pr-closed/NorskViking/{repo-name}.svg) ![repo-size](https://badge-size.herokuapp.com/NorskViking/rock-paper-scissor-master/master/{filename})
+
 # Frontend Mentor - Rock, Paper, Scissors solution
 
 This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
