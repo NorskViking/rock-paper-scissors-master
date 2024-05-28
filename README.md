@@ -32,11 +32,15 @@ Users should be able to:
 - **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
 ### Screenshot
+ 
+![gif](./src/assets/screenshots/gameplay.gif)
+(Gif made using [canva](https://canca.com))
 
 ![desktop](./src/assets/screenshots/rps-desktop.png)
-<img src="./src/assets/screenshots/rpsls-mobile.png" height=700px>
-<img src="./src/assets/screenshots/rps-mobile_visual-bug.png" height=700px padding=20px>
-
+<p align="center" >
+<img src="./src/assets/screenshots/rpsls-mobile.png" height=700px alt="screenshot of rock, paper, scissor, lizard, spock. On mobile screen."> 
+<img src="./src/assets/screenshots/rps-mobile_visual-bug.png" height=700px alt="Screenshot of rock, paper, scissor, displaying visual bug." >
+</p>
 ### Links
 
 - Solution URL: [Solution](https://github.com/NorskViking/rock-paper-scissors-master)
