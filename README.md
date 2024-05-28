@@ -34,13 +34,16 @@ Users should be able to:
 ### Screenshot
  
 ![gif](./src/assets/screenshots/gameplay.gif)
+<p align="center">
 (Gif made using [canva](https://canca.com))
+</p>
 
 ![desktop](./src/assets/screenshots/rps-desktop.png)
 <p align="center" >
 <img src="./src/assets/screenshots/rpsls-mobile.png" height=700px alt="screenshot of rock, paper, scissor, lizard, spock. On mobile screen."> 
 <img src="./src/assets/screenshots/rps-mobile_visual-bug.png" height=700px alt="Screenshot of rock, paper, scissor, displaying visual bug." >
 </p>
+
 ### Links
 
 - Solution URL: [Solution](https://github.com/NorskViking/rock-paper-scissors-master)
