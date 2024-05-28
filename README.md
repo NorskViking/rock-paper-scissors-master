@@ -11,6 +11,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Known Bugs](#known-bugs)
   - [ToDo](#todo)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -32,7 +33,9 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile](./src/assets/screenshots/rps_mobile.png)
+![desktop](./src/assets/screenshots/rps-desktop.png)
+<img src="./src/assets/screenshots/rpsls-mobile.png" height=700px>
+<img src="./src/assets/screenshots/rps-mobile_visual-bug.png" height=700px padding=20px>
 
 ### Links
 
@@ -43,13 +46,13 @@ Users should be able to:
 
 - When deploying the game on gh-pages, only blank screen is displayed.
 - On computer win, shadow-rings is placed over player-choice display, even though player-choice should have z-index 70 and computer-choice z-index 0
-- In 'Rock, Paper, Scissor, Spock, Lizard' gamemode, the 'rock'-button have missing pointer area in the middle, making the player have to click the outer edges to choose 'rock', unknown why this is.
+- In 'Rock, Paper, Scissor, Lizard, Spock' gamemode, the 'rock'-button have missing pointer area in the middle, making the player have to click the outer edges to choose 'rock', unknown why this is.
 
 ### ToDo
 
 - [ ] Deploy to Github-pages via my portfolio website
 - [x] Implement a Rock, Paper, Scissor, Spock & Lizard version
-- [ ] Implement function for changing between RPS & RPSSL
+- [x] Implement function for changing between RPS & RPSSL
 - [x] Add home to portfolio button
 - [ ] Optimize Components for use in the different game-modes
 
@@ -65,8 +68,18 @@ Users should be able to:
 
 ### What I learned
 
-During this project I've been able to deepen my knowledge of Typescript, and learned how to use TailwindCSS for styling my components. 
+- During this project I've been able to deepen my knowledge of Typescript, and learned how to use TailwindCSS for styling my components. <br>
 
+- Using useState for handling changes and rendering components.
+
+A small function in my GameMode button, that renders the game chosen by the player ([GameMode.tsx](./src/components/GameMode.tsx))
+```ts
+{isChecked === false ? (
+  <RPS_GAME />
+) : (
+  <RPSLS_GAME />
+)}
+```
 
 ### Continued development
 
@@ -75,7 +88,7 @@ In the future I plan on keep deepening my knowledge in Typescript and Tailwind, 
 ### Useful resources
 
 - [tailwindcss.org](https://tailwindcss.com/) - The documentation is well written and easy to understand, which made it easy for me to learn how to use it for styling.
-- [geeksforgeeks.org](https://www.geeksforgeeks.org) - They have many well written guides and articles, that help me when I got stuck in places. One of their articles helped me solve a problem I had with z-index not seemingly working as intended.
+- [geeksforgeeks.org](https://www.geeksforgeeks.org) - They have many well written guides and articles, that helped me when I got stuck in places. One of their articles helped me solve a problem I had with z-index not seemingly working as intended.
 
 
 ## Author

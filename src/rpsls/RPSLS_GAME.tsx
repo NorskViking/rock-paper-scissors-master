@@ -2,21 +2,21 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import ScoreBoard from "./Score";
-import BonusRules from "./rpssl_rules";
-import RPSSLGameBoard from "./RPSSLGameBoard";
+import BonusRules from "./rpsls_rules";
+import RPSLSGameBoard from "./RPSLSGameBoard";
 import ResultBoard from "../components/ResultBoard";
-import { RPSSL, COMPUTER_CHOICE, PLAYER_CHOICE, RPSSL_CHOICES } from './rpssl_data'
+import { RPSLS, COMPUTER_CHOICE, PLAYER_CHOICE, RPSLS_CHOICES } from './rpsls_data'
 
 
-export default function RPSSL_GAME() {
+function RPSLS_GAME() {
     const [rulesVisible, setRulesVisibility] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
     const [score, setScore] = useState(0);
     const [winner, setWinner] = useState('');
 
     const getComputerChoice = () => {
-        const computerChoice = Math.floor(Math.random() * RPSSL_CHOICES.length);
-        return RPSSL[computerChoice];
+        const computerChoice = Math.floor(Math.random() * RPSLS_CHOICES.length);
+        return RPSLS[computerChoice];
     };
 
     const updateChoice = (choice: any, newChoice: {name: any, color: any, img: any} ) => {
@@ -67,7 +67,7 @@ export default function RPSSL_GAME() {
                 <Button styles="absolute z-50 bottom-10 right-[5%] text-white border-2 rounded w-[5rem] h-[2.5rem] text-2xl sm:right-[35%]" onClose={() => setRulesVisibility(true)}>RULES</Button>
             </div>
             {isClicked === false ? (
-                <RPSSLGameBoard handleClick={handleClick} />
+                <RPSLSGameBoard handleClick={handleClick} />
             ) : (
                 <ResultBoard
                     result={winner}
@@ -80,3 +80,4 @@ export default function RPSSL_GAME() {
     )
 } 
 
+export default RPSLS_GAME;

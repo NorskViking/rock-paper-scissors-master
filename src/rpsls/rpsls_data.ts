@@ -4,7 +4,7 @@ import scissorIcon from '../assets/icon-scissors.svg';
 import spockIcon from '../assets/icon-spock.svg';
 import lizardICon from '../assets/icon-lizard.svg';
 
-export const RPSSL = [
+export const RPSLS = [
     { name: 'ROCK', color: "border-[#DE3353]", img: rockIcon },
     { name: 'PAPER', color: 'border-[#4B67F8]', img: paperIcon },
     { name: 'SCISSOR', color: 'border-[#EDA012]', img: scissorIcon },
@@ -24,4 +24,4 @@ export const COMPUTER_CHOICE = {
     img: "",
 }
 
-export const RPSSL_CHOICES: string[] = ['ROCK', 'PAPER', 'SCISSOR', 'SPOCK', 'LIZARD'];
+export const RPSLS_CHOICES: string[] = ['ROCK', 'PAPER', 'SCISSOR', 'LIZARD', 'SPOCK'];

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import RPS_GAME from "../rps/RPS_GAME";
+import RPSLS_GAME from "../rpsls/RPSLS_GAME";
 
 export const GameMode = () => {
     const [isChecked, setIsChecked] = useState(false)
@@ -9,7 +11,7 @@ export const GameMode = () => {
 
     return (
         <>
-            <label className='themeSwitcherTwo absolute inline-flex cursor-pointer select-none items-center left-4 bottom-10 sm:left-[32%]'>
+            <label className='themeSwitcherTwo absolute z-[70] inline-flex cursor-pointer select-none items-center left-4 bottom-10 sm:left-[32%]'>
                 <input
                     type='checkbox'
                     checked={isChecked}
@@ -32,6 +34,11 @@ export const GameMode = () => {
                     RPSSL
                 </span>
             </label>
+            {isChecked === false ? (
+                <RPS_GAME />
+            ) : (
+                <RPSLS_GAME />
+            )}
         </>
     )
 
