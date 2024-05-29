@@ -31,7 +31,7 @@ export const GameMode = () => {
                     ></span>
                 </span>
                 <span className='label flex items-center text-sm font-medium text-white text-xl'>
-                    RPSSL
+                    RPSLS
                 </span>
             </label>
             {isChecked === false ? (
