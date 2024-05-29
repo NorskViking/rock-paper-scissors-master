@@ -1,6 +1,6 @@
 {
   "name": "rock-paper-scissors",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "homepage": "https://norskviking.github.io/rock-paper-scissors-master/",
   "private": true,
   "dependencies": {
