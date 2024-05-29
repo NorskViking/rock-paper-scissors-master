@@ -1,7 +1,7 @@
 {
   "name": "rock-paper-scissors",
   "version": "0.1.1",
-  "homepage": "https://norskviking.github.io/rock-paper-scissors/",
+  "homepage": "https://norskviking.github.io/rock-paper-scissors-master/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
