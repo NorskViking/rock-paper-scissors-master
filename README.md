@@ -1,5 +1,5 @@
 ![issues-open](https://img.shields.io/github/issues/NorskViking/rock-paper-scissors-master.svg) ![issues-closed](https://img.shields.io/github/issues-closed/NorskViking/rock-paper-scissors-master.svg) ![pull-open](https://img.shields.io/github/issues-pr/NorskViking/rock-paper-scissors-master.svg) ![pull-closed](https://img.shields.io/github/issues-pr-closed/NorskViking/rock-paper-scissors-master.svg)<br>
-![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 # Frontend Mentor - Rock, Paper, Scissors solution
 
@@ -57,7 +57,7 @@ Users should be able to:
 
 ### ToDo
 
-- [ ] Deploy to Github-pages via my portfolio website
+- [x] Deploy to Github-pages via my portfolio website
 - [x] Implement a Rock, Paper, Scissor, Spock & Lizard version
 - [x] Implement function for changing between RPS & RPSSL
 - [x] Add home to portfolio button
